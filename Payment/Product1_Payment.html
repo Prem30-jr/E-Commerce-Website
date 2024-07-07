@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yellow Plain t-shirt Payment</title>
+  <link rel="stylesheet" href="Payment_Style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div id="header">
+    <img src="assets/Logo.png" />
+    <h2>Checkout</h2>
+    <div class="hr">
+      <hr />
+    </div>
+  </div>
+
+  <div class="one-side">
+    <div class="address">
+      <ul>
+        <li>
+          <span style="margin-right: 30px">1</span> <b>Delivery Address</b>
+        </li>
+      </ul>
+      <div>
+        <p>
+          Prem<br />
+          35/16, Subhiksha flats<br />
+          ameerjan street, choolaimedu<br />
+          Chennai, TAMIL NADU 600094<br />
+          <a href="#">Add Delivery Instructions</a>
+        </p>
+      </div>
+    </div>
+    <br />
+    <hr style="width: 82%" />
+    <div class="Payment">
+      <ul>
+        <li>
+          <span style="margin-right: 30px">2</span
+          ><b>Select a Payment Method </b>
+        </li>
+      </ul>
+      <div class="payment_method">
+        <h3>Your Available Balance</h3>
+        <hr />
+
+        <i class="fa-solid fa-plus"></i
+        ><input type="text" placeholder="Enter Code" /><button>Apply</button>
+        <div class="another_payment_method">
+          <h3>Another Payment Method</h3>
+          <hr />
+          <label>
+            <input type="radio" name="payment" class="netbanking" /><b
+              >Credit or Debit card</b
+            ></label
+          ><br /><br />
+          <div class="card_img">
+            <img src="assets/visa card.jpg" />
+            <img src="assets/master card.jpg" />
+            <img src="assets/maestro.png" />
+            <img src="assets/rupay.webp" />
+          </div>
+          <br />
+          <div class="netbanking">
+            <label>
+              <input type="radio" name="payment" class="netbanking" /><b
+                >Net Banking</b
+              ></label
+            ><br />
+            <select name="cars" id="cars">
+              <option class="choose_option">Choose an option</option>
+              <option>Airtel Payments Bank</option>
+              <option>Axis Bank</option>
+              <option>HDFC Bank</option>
+              <option>ICICI Bank</option>
+              <option>Kotak Bank</option>
+              <option>State Bank of India</option>
+            </select>
+          </div>
+        </div>
+        <div class="upi_apps">
+          <label>
+            <input type="radio" name="payment" class="upi_app" /><b
+              style="margin-left: 10px"
+              >Other UPI Apps</b
+            ></label
+          ><br />
+          <div class="upi_content">
+            <p>Please enter your UPI ID</p>
+            <input
+              type="text"
+              id="enter_code"
+              placeholder="Enter UPI ID"
+            /><button>Verfiy</button>
+            <p>The UPI ID is in the format of name/phone number@bankname</p>
+          </div>
+        </div>
+        <div class="cash_on_delivery">
+          <label>
+            <input type="radio" name="payment" class="cod" /><b
+              style="margin-left: 10px"
+              >Cash on Delivery/Pay on Delivery</b
+            ></label
+          >
+          <p>Cash, UPI and Cards accepted. <a href="#">Know More.</a></p>
+        </div>
+      </div>
+    </div><br><br>
+  </div>
+
+  <div class="payment_section">
+    <div class="btn">
+      <button>Use this payment method</button>
+      <p>Choose a payment method to continue checking out. You will still have a chance to review and edit your order before it is final.</p><hr>
+    </div>
+    <div class="summary">
+      <h2>Order Summary</h2>
+      <p>Items:<span>$150.00</span></p>
+      <p>Delivery:<span>--</span></p><hr>
+      <h3 style="color: #B12704;">Order Total:<span style="margin-left: 110px;">$150.00</span></h3><hr>
+    </div>
+    <div class="delivery_calculation">
+      <p><a href="#">How are delivery costs calculated?</a></p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript functions
+    function highlightBorder() {
+      document.getElementById("enter_code").style.border = "1px solid blue";
+    }
+
+    function removeBorder() {
+      document.getElementById("enter_code").style.border = "none";
+    }
+  </script>
+</body>
+</html>

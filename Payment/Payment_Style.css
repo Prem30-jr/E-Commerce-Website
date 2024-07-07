@@ -1,0 +1,255 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+}
+
+#header h2 {
+    margin-left: 550px;
+    margin-top: 50px;
+}
+
+.hr {
+    width: 80px;
+    margin-left: -90px;
+    margin-top: 80px;
+}
+
+.hr hr {
+    border: 2px solid orange;
+}
+
+#header img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    margin-left: 80px;
+    position: absolute;
+}
+
+.one-side {
+    float: left;
+    width: 70%;
+    margin-left: -10px;
+}
+
+
+
+.address {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address ul {
+    list-style: none;
+    margin-left: 70px;
+}
+
+.address p {
+    margin-right: 100px;
+}
+
+.address ul li {
+    font-size: 24px;
+    font-weight: 500;
+}
+.address a{
+    color: #007185;
+    text-decoration: none;
+}
+.Payment ul li {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Payment ul {
+    list-style: none;
+    margin-left: 70px;
+}
+
+.Payment .payment_method {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #D5D9D9;
+    margin-left: 150px;
+    padding: 10px;
+    width: 70%;
+
+}
+
+.Payment .payment_method h3 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.payment_method i {
+    margin-left: 25px;
+    color: #DDDDDD;
+}
+
+.payment_method input {
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    height: 26px;
+    width: 200px;
+}
+
+.payment_method hr {
+    width: 95%;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.payment_method button {
+    margin-left: 20px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #767676;
+}
+
+.card_img {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+.another_payment_method img {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.another_payment_method .credit {
+    margin-left: 30px;
+}
+
+.another_payment_method input {
+    margin-right: 15px;
+}
+
+.netbanking select {
+    background: #F0F2F2;
+    margin-left: 60px;
+    height: 30px;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.upi_apps {
+    margin-top: 10px;
+}
+
+.Payment input[type="radio"] {
+    height: 15px;
+    width: 15px;
+    margin-left: 30px;
+}
+
+.upi_content {
+    line-height: 8px;
+    margin-left: 10px;
+}
+
+.upi_content button {
+    margin-left: 20px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: #d5d9d9;
+    background: #FFD814;
+}
+.upi_content button:hover{
+    background: #FFC107;
+}
+
+.upi_content p {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.upi_content input {
+    margin-left: 50px;
+    width: 150px;
+    padding-left: 10px;
+}
+
+.cash_on_delivery p {
+    margin-left: 60px;
+    line-height: 8px;
+}
+
+.cash_on_delivery a {
+    text-decoration: none;
+    color: #007185;
+}
+
+.payment_section {
+    float: right;
+    width: 25%;
+    margin-right: 50px;
+    background: #fff;
+    margin-top: 30px;
+    border: 1px solid #D5D9D9;
+    border-radius: 10px;
+}
+.payment_section hr{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.payment_section .btn button {
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 250px;
+    background: #FFD814;
+    margin-left: 20px;
+    border: 1px solid #D5D9D9;
+}
+.btn button:hover{
+    background: #e7c415;
+}
+.btn {
+    padding: 10px;
+}
+
+.btn p {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.summary {
+    margin-top: -20px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.summary span {
+    margin-left: 60%;
+}
+
+.delivery_calculation {
+    padding: 2px 10px;
+    background: #F0F2F2;
+    border-bottom-right-radius: 10px;
+    /* Adds border radius to bottom right */
+    border-bottom-left-radius: 10px;
+}
+.delivery_calculation a{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #007185;
+    text-decoration: none;
+}
