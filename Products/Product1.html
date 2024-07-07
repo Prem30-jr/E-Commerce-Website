@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yellow Plain t-shirt</title>
+    <link rel="stylesheet" href="css/Product1_Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main-section">
+      <div id="img-section">
+        <img src="assets/Product5.webp" />
+        <p>Yellow Plain T-shirt</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+        <p>$150.00</p>
+        <button class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+        </button>
+        <a href="file:///C:/Users/Prem%20Kumar/OneDrive/Desktop/E-commerce%20Website/Payment/Product1_Payment.html"><button class="buying"><i class="fa-solid fa-bolt"></i>Buy Now</button></a>
+      </div>
+      <div id="content-section">
+        <h2>
+          LIQVID Round Neck Pure Cotton Casual 
+          Oversized Plain Drop Shoulder 
+          T-Shirt for Men's
+        </h2>
+        <p style="color: #65a541; font-weight: 500">Special Price</p>
+        <p style="font-size: 26px">
+          <b>$150.00 </b
+          ><span
+            style="
+              text-decoration: line-through;
+              font-size: 16px;
+              margin-left: 2px;
+            "
+            >$300.00</span
+          >
+          <span style="font-size: 18px; margin-left: 2px; color: #65a541"
+            >60% off</span
+          >
+        </p>
+        <div class="review">
+          <button type="submit" class="review-btn">
+            4<i class="fa-regular fa-star"></i>
+          </button>
+          <p>1,262 ratings and 121 reviews</p>
+        </div>
+        <div class="size">
+          <p>Size</p>
+          <button type="button" onclick="changeColor(this)">S</button>
+          <button type="button" onclick="changeColor(this)">M</button>
+          <button type="button" onclick="changeColor(this)">L</button>
+          <button type="button" onclick="changeColor(this)">XL</button><br />
+
+          <p style="margin-bottom: -2px"><b>Available Offers</b></p>
+          <ul>
+            <li>
+              Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit
+              Card<a href="#">T&C</a>
+            </li>
+            <li>
+              Bank Offer 10% instant discount on SBI Credit Card Transactions,
+              up to ₹1,250 on orders of ₹5,000 and above<a href="#">T&C</a>
+            </li>
+            <li>
+              Bank Offer 10% instant discount on SBI Credit Card EMI
+              Transactions, up to ₹1,750 on orders of ₹5,000 and above<a
+                href="#"
+                >T&C</a
+              >
+            </li>
+            <li>
+              Special Price Get extra 18% off (price inclusive of
+              cashback/coupon)<a href="#">T&C</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="gallery-section">
+        <div class="gallery">
+          <img
+            src="assets/image1.jpg"
+            alt="Image 1"
+            onclick="enlargeImage(this)"
+          />
+          <img
+            src="assets/image2.jpg"
+            alt="Image 2"
+            onclick="enlargeImage(this)"
+          />
+          <img
+            src="assets/image3.jpg"
+            alt="Image 3"
+            onclick="enlargeImage(this)"
+          />
+          <img
+            src="assets/image4.jpg"
+            alt="Image 4"
+            onclick="enlargeImage(this)"
+          />
+        </div>
+        <div class="overlay" id="overlay" onclick="closeEnlarged()"></div>
+        <div class="enlarged" id="enlarged">
+          <img id="enlargedImage" src="" alt="Enlarged Image" />
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function enlargeImage(image) {
+        const enlargedImage = document.getElementById("enlargedImage");
+        enlargedImage.src = image.src;
+        document.getElementById("enlarged").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function closeEnlarged() {
+        document.getElementById("enlarged").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+      }
+      function changeColor(button) {
+        // Get all buttons within the .size class
+        var buttons = document.querySelectorAll(".size button");
+
+        // Remove the active class from all buttons
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+
+        // Add the active class to the clicked button
+        button.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
