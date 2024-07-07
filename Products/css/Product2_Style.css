@@ -1,0 +1,121 @@
+*{
+    font-family: 'Arial',sans-serif;
+}
+#main-section{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+#main-section img{
+    width: 300px;
+    height: 400px;
+}
+#main-section #img-section p{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+#main-section i {
+    margin-left: 5px;
+    font-size: 16px;
+    color: orange;
+}
+#main-section #img-section i{
+    margin-bottom: 2px;
+}
+#content-section{
+    margin-left: 30px;
+}
+#content-section h2{
+    white-space: pre-line;
+}
+#content-section .review-btn{
+    width: 50px;
+    font-size: 16px;
+    background-color: #26A541;
+    border: #26A541;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 3px;
+    height: 30px;
+    border-radius: 30px;
+}
+#content-section button i{
+    color: white;
+}
+.review .review-button,
+    .review p {
+        display: inline-block;
+        vertical-align: middle; 
+        cursor: pointer;
+}
+.size p,
+    .size button {
+        display: inline-block;
+        vertical-align: middle; 
+        cursor: pointer;
+}
+.size button{
+    margin-left: 20px;
+    width: 50px;
+    background-color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;
+    height: 40px;
+}
+.size ul li a{
+    text-decoration: none;
+}
+#content-section .size ul li{
+    line-height: 30px;
+    margin-top: 5px;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-left: -40px;
+}
+#img-section .buying{
+    width: 300px;
+    height: 40px;
+    background-color: #FB641B;
+    font-size: 20px;
+    border-radius: 20px;
+    border: orange;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#img-section .cart:hover{
+    background-color: white;
+    color: black;
+}
+#img-section .cart i{
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#img-section .cart{
+    width: 300px;
+    height: 40px;
+    background-color: orange;
+    font-size: 20px;
+    border-radius: 20px;
+    border: orange;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#img-section .buying:hover{
+    background-color: white;
+    color: black;
+}
+#img-section .buying i{
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
